@@ -1,5 +1,7 @@
 import os
-from flask import Flask, send_file, request, render_template
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
 
 datos = [
     {
@@ -33,25 +35,23 @@ datos = [
         "mensaje": "Tengo una pregunta"
     }
 ]
-app = Flask(__name__)
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/', methods=['GET', 'POST'])
 def formulario():
-    # if request.method == 'POST':
-    #     nombre = request.form['nombre']
-    #     contacto = request.form['contacto']
-    #     email = request.form['email']
-    #     mensaje = request.form['mensaje']
-    #     print(f'nombre ingresado: {nombre}')
-    #     datos[{'nombre':nombre, 'contacto':contacto, 'email':email, 'mensaje':mensaje}]
-    return send_file('formulario.html')
+    if request.method == 'POST':
+        nombre = request.form['nombre']
+        contacto = request.form['contacto']
+        email = request.form['email']
+        mensaje = request.form['mensaje']
+        datos.append({'nombre': nombre, 'contacto': contacto, 'email': email, 'mensaje': mensaje})
+    return render_template('formulario.html')
 
 @app.route('/mostrar')
 def mostrar():
-    return render_template('mostrar.html',datos=datos)
+    return render_template('mostrar.html', datos=datos)
 
 def main():
-    app.run(port=int(os.environ.get('PORT', 80)))
+    app.run(port=int(os.environ.get('PORT', 5000)))
 
 if __name__ == "__main__":
     main()
