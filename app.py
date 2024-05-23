@@ -5,33 +5,33 @@ app = Flask(__name__)
 
 datos = [
     {
-        "nombre": "Juan Pérez",
-        "contacto": "123456789",
-        "email": "juan@example.com",
+        "nombre": "Jose Silva",
+        "contacto": "3107123892",
+        "email": "jose@example.com",
         "mensaje": "Hola, ¿cómo estás?"
     },
     {
-        "nombre": "María García",
+        "nombre": "Mario Perez",
         "contacto": "987654321",
-        "email": "maria@example.com",
+        "email": "mario@example.com",
         "mensaje": "Necesito más información"
     },
     {
-        "nombre": "Pedro Gómez",
+        "nombre": "Pepe Mojica",
         "contacto": "456789123",
-        "email": "pedro@example.com",
+        "email": "pepe@example.com",
         "mensaje": "Gracias por tu ayuda"
     },
     {
-        "nombre": "Ana Sánchez",
+        "nombre": "Messi Ayala",
         "contacto": "789123456",
-        "email": "ana@example.com",
+        "email": "Messi@example.com",
         "mensaje": "Me interesa tu servicio"
     },
     {
-        "nombre": "Luis Ramírez",
+        "nombre": "Lucas Perez",
         "contacto": "321654987",
-        "email": "luis@example.com",
+        "email": "lucas@example.com",
         "mensaje": "Tengo una pregunta"
     }
 ]
