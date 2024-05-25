@@ -27,13 +27,8 @@ datos = [
         "contacto": "789123456",
         "email": "Messi@example.com",
         "mensaje": "Me interesa tu servicio"
-    },
-    {
-        "nombre": "Lucas Perez",
-        "contacto": "321654987",
-        "email": "lucas@example.com",
-        "mensaje": "Tengo una pregunta"
     }
+    
 ]
 
 @app.route('/', methods=['GET', 'POST'])
