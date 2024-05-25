@@ -12,12 +12,6 @@ datos = [
         "mensaje": "Necesito más información"
     },
     {
-        "nombre": "Pepe Mojica",
-        "contacto": "456789123",
-        "email": "pepe@example.com",
-        "mensaje": "Gracias por tu ayuda"
-    },
-    {
         "nombre": "Messi Ayala",
         "contacto": "789123456",
         "email": "Messi@example.com",
