@@ -4,12 +4,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 datos = [
-    {
-        "nombre": "Jose Silva",
-        "contacto": "3107123892",
-        "email": "jose@example.com",
-        "mensaje": "Hola, ¿cómo estás?"
-    },
+    
     {
         "nombre": "Mario Perez",
         "contacto": "987654321",
