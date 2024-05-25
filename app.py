@@ -6,7 +6,7 @@ app = Flask(__name__)
 datos = [
     
     {
-        "nombre": "Mario Perez",
+        "nombre": "Michael Ayala",
         "contacto": "987654321",
         "email": "mario@example.com",
         "mensaje": "Necesito más información"
